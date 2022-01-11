@@ -13,10 +13,12 @@
 		6EA789A7278C176E00064B4C /* universalExpositionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A6278C176E00064B4C /* universalExpositionMock.json */; };
 		C23E4AB8278D1222004B7270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB7278D1222004B7270 /* Constant.swift */; };
 		C23E4ABA278D123F004B7270 /* ExpositionApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */; };
-		C23E4ABE278D168B004B7270 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* ListViewController.swift */; };
+		C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */; };
 		C23E4AC0278D4B8A004B7270 /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABF278D4B8A004B7270 /* ApiMock.swift */; };
 		C23E4AC2278D4BB1004B7270 /* ExpositionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */; };
 		C23E4AC4278D5191004B7270 /* ExpositionApiInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */; };
+		C23E4AC7278D5E78004B7270 /* KoreanEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */; };
+		C23E4AC8278D5E78004B7270 /* KoreanEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
 		C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B62589F401005FB0FD /* SceneDelegate.swift */; };
 		C79FF4B92589F401005FB0FD /* ExpositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */; };
@@ -32,10 +34,12 @@
 		6EA789A6278C176E00064B4C /* universalExpositionMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universalExpositionMock.json; sourceTree = "<group>"; };
 		C23E4AB7278D1222004B7270 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApiMock.swift; sourceTree = "<group>"; };
-		C23E4ABD278D168B004B7270 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListViewController.swift; sourceTree = "<group>"; };
 		C23E4ABF278D4B8A004B7270 /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
 		C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApi.swift; sourceTree = "<group>"; };
 		C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApiInjection.swift; sourceTree = "<group>"; };
+		C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryTableViewCell.swift; sourceTree = "<group>"; };
+		C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KoreanEntryTableViewCell.xib; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79FF4B42589F401005FB0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79FF4B62589F401005FB0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */,
-				C23E4ABD278D168B004B7270 /* ListViewController.swift */,
+				C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				C79FF4BA2589F401005FB0FD /* Main.storyboard */,
+				C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */,
+				C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 				6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */,
 				C79FF4C12589F404005FB0FD /* LaunchScreen.storyboard in Resources */,
 				C79FF4BE2589F404005FB0FD /* Assets.xcassets in Resources */,
+				C23E4AC8278D5E78004B7270 /* KoreanEntryTableViewCell.xib in Resources */,
 				C79FF4BC2589F401005FB0FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +225,8 @@
 				6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */,
 				C23E4AC0278D4B8A004B7270 /* ApiMock.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
-				C23E4ABE278D168B004B7270 /* ListViewController.swift in Sources */,
+				C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */,
+				C23E4AC7278D5E78004B7270 /* KoreanEntryTableViewCell.swift in Sources */,
 				C23E4AB8278D1222004B7270 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
