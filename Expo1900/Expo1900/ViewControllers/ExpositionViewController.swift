@@ -23,6 +23,7 @@ class ExpositionViewController: UIViewController {
     private var api: ExpositionApi!
     
     override func viewWillAppear(_ animated: Bool) {
+        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         self.api = ExpositionApiInjection.injectExpositionApi()
@@ -35,12 +36,21 @@ class ExpositionViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
     private func configureUI() {
         self.titleLabel.text = self.universalExposition?.title
         self.visitorsLabel.text = "\(self.universalExposition?.visitors ?? 0) 명"
         self.locationLabel.text = self.universalExposition?.location
         self.durationLabel.text = self.universalExposition?.duration
         self.descriptionLabel.text = self.universalExposition?.description
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinationViewController = segue.destination as? KoreanEntryListViewController
+        destinationViewController?.dataSource = KoreanEntryListTableViewDataSoruce(items: [])
     }
 }
 
