@@ -7,10 +7,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private let repository = Repository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        guard let universalExpoistion = repository.getUniversalExposition() else {
+            return
+        }
+        print(universalExpoistion)
     }
 
 

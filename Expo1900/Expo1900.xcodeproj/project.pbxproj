@@ -11,6 +11,9 @@
 		6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899F278C168500064B4C /* UniversalExposition.swift */; };
 		6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A4278C174D00064B4C /* koreanEntryMock.json */; };
 		6EA789A7278C176E00064B4C /* universalExpositionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A6278C176E00064B4C /* universalExpositionMock.json */; };
+		C23E4AB8278D1222004B7270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB7278D1222004B7270 /* Constant.swift */; };
+		C23E4ABA278D123F004B7270 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* Repository.swift */; };
+		C23E4ABE278D168B004B7270 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* ListViewController.swift */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
 		C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B62589F401005FB0FD /* SceneDelegate.swift */; };
 		C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		6EA7899F278C168500064B4C /* UniversalExposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalExposition.swift; sourceTree = "<group>"; };
 		6EA789A4278C174D00064B4C /* koreanEntryMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = koreanEntryMock.json; sourceTree = "<group>"; };
 		6EA789A6278C176E00064B4C /* universalExpositionMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universalExpositionMock.json; sourceTree = "<group>"; };
+		C23E4AB7278D1222004B7270 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C23E4AB9278D123F004B7270 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C23E4ABD278D168B004B7270 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79FF4B42589F401005FB0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79FF4B62589F401005FB0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,7 @@
 			children = (
 				6EA7899D278C167900064B4C /* KoreanEntry.swift */,
 				6EA7899F278C168500064B4C /* UniversalExposition.swift */,
+				C23E4AB9278D123F004B7270 /* Repository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -58,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				C79FF4B82589F401005FB0FD /* ViewController.swift */,
+				C23E4ABD278D168B004B7270 /* ListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -80,6 +88,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C23E4AB6278D1212004B7270 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C23E4AB7278D1222004B7270 /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		C79FF4A82589F401005FB0FD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 		C79FF4B32589F401005FB0FD /* Expo1900 */ = {
 			isa = PBXGroup;
 			children = (
+				C23E4AB6278D1212004B7270 /* Constants */,
 				6EA789A3278C16E900064B4C /* Resources */,
 				6EA789A2278C16A100064B4C /* Views */,
 				6EA789A1278C169700064B4C /* ViewControllers */,
@@ -183,11 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23E4ABA278D123F004B7270 /* Repository.swift in Sources */,
 				C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
 				6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */,
 				6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
+				C23E4ABE278D168B004B7270 /* ListViewController.swift in Sources */,
+				C23E4AB8278D1222004B7270 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
