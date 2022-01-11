@@ -21,9 +21,13 @@ class ApiMock {
     }
     
     func response<T: Decodable>(completion: @escaping (T) -> Void) {
-        guard let response = try? self.decode(T.self, fileName: self.jsonFileName) else {
-            return
+        DispatchQueue.global().async {
+            guard let response = try? self.decode(T.self, fileName: self.jsonFileName) else {
+                return
+            }
+            DispatchQueue.main.async {
+                completion(response)
+            }
         }
-        completion(response)
     }
 }
