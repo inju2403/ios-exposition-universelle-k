@@ -6,7 +6,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ExpositionViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var expositionImageView: UIImageView!
+    @IBOutlet weak var visitorsLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     private let repository = Repository()
     
