@@ -47,8 +47,8 @@ class ExpositionViewController: UIViewController {
         self.durationLabel.text = self.universalExposition?.duration
         self.descriptionLabel.text = self.universalExposition?.description
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         let destinationViewController = segue.destination as? KoreanEntryListViewController
         destinationViewController?.dataSource = KoreanEntryListTableViewDataSoruce(items: [])
     }

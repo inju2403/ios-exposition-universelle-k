@@ -11,21 +11,50 @@ class KoreanEntryListViewController: UIViewController {
 
     @IBOutlet weak var koreanEntryListTableView: UITableView!
     
-    var dataSource: KoreanEntryListTableViewDataSoruce!
+    var dataSource: UITableViewDataSource!
+    var delegate: KoreanEntryListTableViewDelegate!
     private var api: ExpositionApi!
     private var koreanEntryList: [KoreanEntry]? {
         willSet(newKoreanEntryList) {
-            if let newKoreanEntryList = newKoreanEntryList {
+            if let newKoreanEntryList = newKoreanEntryList,
+               let dataSource = dataSource as? KoreanEntryListTableViewDataSoruce {
                 dataSource.items = newKoreanEntryList
+                delegate.items = newKoreanEntryList
                 koreanEntryListTableView.reloadData()
             }
         }
     }
+    private var selectedKoreanEntry: KoreanEntry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpTableView()
         self.fetchData()
+        self.setUpNotificationObserver()
+    }
+    
+    private func setUpNotificationObserver() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(showDetailKoreanEntry),
+            name: NSNotification.Name(Constant.showDetailKoreanEntryNotification),
+            object: nil
+        )
+    }
+    
+    @objc func showDetailKoreanEntry(_ notification: Notification) {
+        print(1)
+        guard let koreanEntry = notification.object as? KoreanEntry else {
+            return
+        }
+        print(2)
+        selectedKoreanEntry = koreanEntry
+        self.performSegue(withIdentifier: Constant.KoreanEntryDetailViewControllerIdentifier, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as? KoreanEntryDetailViewController
+        destinationViewController?.koreanEntry = selectedKoreanEntry
     }
     
     private func fetchData() {
@@ -40,6 +69,8 @@ class KoreanEntryListViewController: UIViewController {
     
     private func setUpTableView() {
         koreanEntryListTableView.dataSource = self.dataSource
+        delegate = KoreanEntryListTableViewDelegate(items: [])
+        koreanEntryListTableView.delegate = self.delegate
         koreanEntryListTableView.register(
             UINib(nibName: Constant.koreanEntryListCellNibName, bundle: nil),
             forCellReuseIdentifier: Constant.koreanEntryTableViewIdentifier
@@ -72,5 +103,22 @@ class KoreanEntryListTableViewDataSoruce: NSObject, UITableViewDataSource {
         cell.koreanEntryImageView.image = UIImage(named: items[indexPath.row].imageName)
         
         return cell
+    }
+}
+
+class KoreanEntryListTableViewDelegate: NSObject, UITableViewDelegate {
+    
+    var items: [KoreanEntry]
+    
+    init(items: [KoreanEntry]) {
+        self.items = items
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NotificationCenter.default.post(
+            name: NSNotification.Name(Constant.showDetailKoreanEntryNotification),
+            object: items[indexPath.row]
+        )
+        print("ok")
     }
 }

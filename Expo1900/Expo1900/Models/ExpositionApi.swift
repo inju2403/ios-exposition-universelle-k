@@ -6,6 +6,6 @@
 //
 
 protocol ExpositionApi {
-    func fetchKoreanEntryList(completion: @escaping ([KoreanEntry]?) -> ())
-    func fetchExposition(completion: @escaping (UniversalExposition?) -> ())
+    func fetchKoreanEntryList(completion: @escaping ([KoreanEntry]?) -> Void)
+    func fetchExposition(completion: @escaping (UniversalExposition?) -> Void)
 }

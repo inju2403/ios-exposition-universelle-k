@@ -10,4 +10,6 @@ struct Constant {
     static let universalExpositionMockFileName = "universalExpositionMock"
     static let koreanEntryListCellNibName = "KoreanEntryTableViewCell"
     static let koreanEntryTableViewIdentifier = "ReusableCell"
+    static let showDetailKoreanEntryNotification = "showDetailKoreanEntry"
+    static let KoreanEntryDetailViewControllerIdentifier = "Detail"
 }

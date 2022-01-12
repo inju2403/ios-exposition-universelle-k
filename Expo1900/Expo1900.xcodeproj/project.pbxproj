@@ -11,6 +11,7 @@
 		6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899F278C168500064B4C /* UniversalExposition.swift */; };
 		6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A4278C174D00064B4C /* koreanEntryMock.json */; };
 		6EA789A7278C176E00064B4C /* universalExpositionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A6278C176E00064B4C /* universalExpositionMock.json */; };
+		6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */; };
 		C23E4AB8278D1222004B7270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB7278D1222004B7270 /* Constant.swift */; };
 		C23E4ABA278D123F004B7270 /* ExpositionApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */; };
 		C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */; };
@@ -32,6 +33,7 @@
 		6EA7899F278C168500064B4C /* UniversalExposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalExposition.swift; sourceTree = "<group>"; };
 		6EA789A4278C174D00064B4C /* koreanEntryMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = koreanEntryMock.json; sourceTree = "<group>"; };
 		6EA789A6278C176E00064B4C /* universalExpositionMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universalExpositionMock.json; sourceTree = "<group>"; };
+		6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryDetailViewController.swift; sourceTree = "<group>"; };
 		C23E4AB7278D1222004B7270 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApiMock.swift; sourceTree = "<group>"; };
 		C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */,
 				C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */,
+				6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */,
 				C23E4AC2278D4BB1004B7270 /* ExpositionApi.swift in Sources */,
 				6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */,
+				6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */,
 				C23E4AC0278D4B8A004B7270 /* ApiMock.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
 				C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */,
