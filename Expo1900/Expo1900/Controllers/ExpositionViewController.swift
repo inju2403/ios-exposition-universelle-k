@@ -15,15 +15,14 @@ class ExpositionViewController: UIViewController {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    private var api: ExpositionApi!
     private var universalExposition: UniversalExposition? {
         didSet {
             configureUI()
         }
     }
-    private var api: ExpositionApi!
     
     override func viewWillAppear(_ animated: Bool) {
-        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         self.api = ExpositionApiInjection.injectExpositionApi()
@@ -50,7 +49,8 @@ class ExpositionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as? KoreanEntryListViewController
-        destinationViewController?.dataSource = KoreanEntryListTableViewDataSoruce(items: [])
+        destinationViewController?.dataSource = KoreanEntryListTableViewDataSoruce()
+        destinationViewController?.delegate = KoreanEntryListTableViewDelegate()
     }
 }
 

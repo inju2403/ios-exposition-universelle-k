@@ -12,11 +12,15 @@ class KoreanEntryDetailViewController: UIViewController {
     @IBOutlet weak var koreanEntryImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var koreanEntry: KoreanEntry!
+    var koreanEntry: KoreanEntry?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let koreanEntry = koreanEntry else {
+            return
+        }
+        
         koreanEntryImageView.image = UIImage(named: koreanEntry.imageName)
         descriptionLabel.text = koreanEntry.description
     }

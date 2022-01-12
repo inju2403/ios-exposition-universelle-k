@@ -13,7 +13,6 @@ class KoreanEntryTableViewCell: UITableViewCell {
     @IBOutlet weak var koreanEntryNameLabel: UILabel!
     @IBOutlet weak var koreanEntryShortDescriptionLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -23,5 +22,4 @@ class KoreanEntryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
-    
 }
