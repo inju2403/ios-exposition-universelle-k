@@ -60,9 +60,12 @@ class KoreanEntryListViewController: UIViewController {
     }
     
     @objc func showDetailKoreanEntry(_ notification: Notification) {
-        guard let selected = notification.object as? Int else {
+        guard let notificationInfo = notification.userInfo as? [String : Int],
+              let selected = notificationInfo[Constant.selectedIndexPathRow] else {
             return
         }
+        
+        
         
         self.selectedKoreanEntry = koreanEntryList?[selected]
         self.performSegue(withIdentifier: Constant.KoreanEntryDetailViewControllerIdentifier, sender: self)

@@ -12,4 +12,5 @@ struct Constant {
     static let koreanEntryTableViewIdentifier = "ReusableCell"
     static let showDetailKoreanEntryNotification = "showDetailKoreanEntry"
     static let KoreanEntryDetailViewControllerIdentifier = "Detail"
+    static let selectedIndexPathRow = "selectedIndexPathRow"
 }

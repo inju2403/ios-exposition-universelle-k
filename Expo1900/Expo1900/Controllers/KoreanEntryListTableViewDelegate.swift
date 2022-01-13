@@ -11,7 +11,8 @@ class KoreanEntryListTableViewDelegate: NSObject, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NotificationCenter.default.post(
             name: NSNotification.Name(Constant.showDetailKoreanEntryNotification),
-            object: indexPath.row
+            object: nil,
+            userInfo: [Constant.selectedIndexPathRow : indexPath.row]
         )
     }
 }
