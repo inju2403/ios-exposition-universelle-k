@@ -16,7 +16,7 @@ class ApiMock {
         }
         
         let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
-        let response = try decoder.decode(T.self, from: jsonData)
+        let response = try decoder.decode(decodingType, from: jsonData)
         return response
     }
     

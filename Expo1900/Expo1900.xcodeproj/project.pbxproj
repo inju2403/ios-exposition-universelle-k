@@ -72,9 +72,9 @@
 			children = (
 				6EA7899D278C167900064B4C /* KoreanEntry.swift */,
 				6EA7899F278C168500064B4C /* UniversalExposition.swift */,
-				C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */,
 				C23E4ABF278D4B8A004B7270 /* ApiMock.swift */,
 				C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */,
+				C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */,
 				C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */,
 				6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */,
 			);
@@ -112,12 +112,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C23E4AB6278D1212004B7270 /* Constants */ = {
+		C23E4AB6278D1212004B7270 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				C23E4AB7278D1222004B7270 /* Constant.swift */,
 			);
-			path = Constants;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C79FF4A82589F401005FB0FD = {
@@ -139,7 +139,7 @@
 		C79FF4B32589F401005FB0FD /* Expo1900 */ = {
 			isa = PBXGroup;
 			children = (
-				C23E4AB6278D1212004B7270 /* Constants */,
+				C23E4AB6278D1212004B7270 /* Common */,
 				6EA789A3278C16E900064B4C /* Resources */,
 				6EA789A2278C16A100064B4C /* Views */,
 				6EA789A1278C169700064B4C /* Controllers */,

@@ -28,9 +28,26 @@ class KoreanEntryListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.setUpTableView()
         self.fetchData()
         self.setUpNotificationObserver()
+    }
+    
+    private func fetchData() {
+        self.api = ExpositionApiInjection.injectExpositionApi()
+        self.api?.fetchKoreanEntryList { [weak self] koreanEntryList in
+            self?.koreanEntryList = koreanEntryList
+        }
+    }
+    
+    private func setUpTableView() {
+        self.koreanEntryListTableView.dataSource = self.dataSource
+        self.koreanEntryListTableView.delegate = self.delegate
+        self.koreanEntryListTableView.register(
+            UINib(nibName: Constant.koreanEntryListCellNibName, bundle: nil),
+            forCellReuseIdentifier: Constant.koreanEntryTableViewIdentifier
+        )
     }
     
     private func setUpNotificationObserver() {
@@ -47,31 +64,12 @@ class KoreanEntryListViewController: UIViewController {
             return
         }
         
-        selectedKoreanEntry = koreanEntryList?[selected]
+        self.selectedKoreanEntry = koreanEntryList?[selected]
         self.performSegue(withIdentifier: Constant.KoreanEntryDetailViewControllerIdentifier, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as? KoreanEntryDetailViewController
         destinationViewController?.koreanEntry = selectedKoreanEntry
-    }
-    
-    private func fetchData() {
-        self.api = ExpositionApiInjection.injectExpositionApi()
-        self.api?.fetchKoreanEntryList { [weak self] koreanEntryList in
-            guard let self = self, let koreanEntryList = koreanEntryList else {
-                return
-            }
-            self.koreanEntryList = koreanEntryList
-        }
-    }
-    
-    private func setUpTableView() {
-        koreanEntryListTableView.dataSource = self.dataSource
-        koreanEntryListTableView.delegate = self.delegate
-        koreanEntryListTableView.register(
-            UINib(nibName: Constant.koreanEntryListCellNibName, bundle: nil),
-            forCellReuseIdentifier: Constant.koreanEntryTableViewIdentifier
-        )
     }
 }

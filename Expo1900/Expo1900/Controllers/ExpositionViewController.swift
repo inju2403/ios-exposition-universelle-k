@@ -24,19 +24,23 @@ class ExpositionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        self.api = ExpositionApiInjection.injectExpositionApi()
-        self.api.fetchExposition { universalExposition in
-            self.universalExposition = universalExposition
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.fetchData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    private func fetchData() {
+        self.api = ExpositionApiInjection.injectExpositionApi()
+        self.api.fetchExposition { [weak self] universalExposition in
+            self?.universalExposition = universalExposition
+        }
     }
     
     private func configureUI() {

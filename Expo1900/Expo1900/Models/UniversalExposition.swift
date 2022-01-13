@@ -5,7 +5,7 @@
 //  Created by 이승주 on 2022/01/10.
 //
 
-struct UniversalExposition: Codable {
+struct UniversalExposition: Decodable {
     let title: String
     let visitors: Int
     let location: String
