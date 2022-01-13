@@ -65,8 +65,6 @@ class KoreanEntryListViewController: UIViewController {
             return
         }
         
-        
-        
         self.selectedKoreanEntry = koreanEntryList?[selected]
         self.performSegue(withIdentifier: Constant.KoreanEntryDetailViewControllerIdentifier, sender: self)
     }
