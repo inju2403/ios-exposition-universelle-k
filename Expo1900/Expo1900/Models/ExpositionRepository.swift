@@ -5,7 +5,7 @@
 //  Created by kakao on 2022/01/11.
 //
 
-protocol ExpositionApi {
+protocol ExpositionRepository {
     func fetchKoreanEntryList(completion: @escaping ([KoreanEntry]?) -> Void)
     func fetchExposition(completion: @escaping (UniversalExposition?) -> Void)
 }

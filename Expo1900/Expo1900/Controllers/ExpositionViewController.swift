@@ -15,7 +15,7 @@ class ExpositionViewController: UIViewController {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    private var api: ExpositionApi!
+    private var api: ExpositionRepository?
     private var universalExposition: UniversalExposition? {
         didSet {
             configureUI()
@@ -23,6 +23,8 @@ class ExpositionViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
@@ -33,12 +35,14 @@ class ExpositionViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     private func fetchData() {
-        self.api = ExpositionApiInjection.injectExpositionApi()
-        self.api.fetchExposition { [weak self] universalExposition in
+        self.api = ExpositionRepositoryInjection.injectExpositionRepository()
+        self.api?.fetchExposition { [weak self] universalExposition in
             self?.universalExposition = universalExposition
         }
     }

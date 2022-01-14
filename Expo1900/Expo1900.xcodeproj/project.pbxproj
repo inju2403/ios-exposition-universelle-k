@@ -15,11 +15,11 @@
 		6EA789A7278C176E00064B4C /* universalExpositionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A6278C176E00064B4C /* universalExpositionMock.json */; };
 		6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */; };
 		C23E4AB8278D1222004B7270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB7278D1222004B7270 /* Constant.swift */; };
-		C23E4ABA278D123F004B7270 /* ExpositionApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */; };
+		C23E4ABA278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */; };
 		C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */; };
-		C23E4AC0278D4B8A004B7270 /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABF278D4B8A004B7270 /* ApiMock.swift */; };
-		C23E4AC2278D4BB1004B7270 /* ExpositionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */; };
-		C23E4AC4278D5191004B7270 /* ExpositionApiInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */; };
+		C23E4AC0278D4B8A004B7270 /* JSONFileDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */; };
+		C23E4AC2278D4BB1004B7270 /* ExpositionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */; };
+		C23E4AC4278D5191004B7270 /* ExpositionRepositoryInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */; };
 		C23E4AC7278D5E78004B7270 /* KoreanEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */; };
 		C23E4AC8278D5E78004B7270 /* KoreanEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
@@ -39,11 +39,11 @@
 		6EA789A6278C176E00064B4C /* universalExpositionMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universalExpositionMock.json; sourceTree = "<group>"; };
 		6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryDetailViewController.swift; sourceTree = "<group>"; };
 		C23E4AB7278D1222004B7270 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApiMock.swift; sourceTree = "<group>"; };
+		C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepositoryDummyImpl.swift; sourceTree = "<group>"; };
 		C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListViewController.swift; sourceTree = "<group>"; };
-		C23E4ABF278D4B8A004B7270 /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
-		C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApi.swift; sourceTree = "<group>"; };
-		C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionApiInjection.swift; sourceTree = "<group>"; };
+		C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDecodable.swift; sourceTree = "<group>"; };
+		C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepository.swift; sourceTree = "<group>"; };
+		C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepositoryInjection.swift; sourceTree = "<group>"; };
 		C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryTableViewCell.swift; sourceTree = "<group>"; };
 		C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KoreanEntryTableViewCell.xib; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +72,10 @@
 			children = (
 				6EA7899D278C167900064B4C /* KoreanEntry.swift */,
 				6EA7899F278C168500064B4C /* UniversalExposition.swift */,
-				C23E4ABF278D4B8A004B7270 /* ApiMock.swift */,
-				C23E4AC1278D4BB1004B7270 /* ExpositionApi.swift */,
-				C23E4AB9278D123F004B7270 /* ExpositionApiMock.swift */,
-				C23E4AC3278D5191004B7270 /* ExpositionApiInjection.swift */,
+				C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */,
+				C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */,
+				C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */,
+				C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */,
 				6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */,
 			);
 			path = Models;
@@ -226,15 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E887938278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift in Sources */,
-				C23E4ABA278D123F004B7270 /* ExpositionApiMock.swift in Sources */,
+				C23E4ABA278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift in Sources */,
 				C79FF4B92589F401005FB0FD /* ExpositionViewController.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
-				C23E4AC4278D5191004B7270 /* ExpositionApiInjection.swift in Sources */,
+				C23E4AC4278D5191004B7270 /* ExpositionRepositoryInjection.swift in Sources */,
 				6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */,
-				C23E4AC2278D4BB1004B7270 /* ExpositionApi.swift in Sources */,
+				C23E4AC2278D4BB1004B7270 /* ExpositionRepository.swift in Sources */,
 				6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */,
 				6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */,
-				C23E4AC0278D4B8A004B7270 /* ApiMock.swift in Sources */,
+				C23E4AC0278D4B8A004B7270 /* JSONFileDecodable.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
 				C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */,
 				6E887936278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift in Sources */,

@@ -11,10 +11,10 @@ class KoreanEntryListViewController: UIViewController {
 
     @IBOutlet weak var koreanEntryListTableView: UITableView!
     
-    var dataSource: UITableViewDataSource!
-    var delegate: UITableViewDelegate!
+    var dataSource: UITableViewDataSource?
+    var delegate: UITableViewDelegate?
     
-    private var api: ExpositionApi?
+    private var api: ExpositionRepository?
     private var selectedKoreanEntry: KoreanEntry?
     private var koreanEntryList: [KoreanEntry]? {
         willSet(newKoreanEntryList) {
@@ -35,7 +35,7 @@ class KoreanEntryListViewController: UIViewController {
     }
     
     private func fetchData() {
-        self.api = ExpositionApiInjection.injectExpositionApi()
+        self.api = ExpositionRepositoryInjection.injectExpositionRepository()
         self.api?.fetchKoreanEntryList { [weak self] koreanEntryList in
             self?.koreanEntryList = koreanEntryList
         }
