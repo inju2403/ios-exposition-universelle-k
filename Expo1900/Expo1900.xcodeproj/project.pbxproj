@@ -7,27 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E887936278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */; };
+		6E887938278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E887937278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift */; };
 		6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899D278C167900064B4C /* KoreanEntry.swift */; };
 		6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899F278C168500064B4C /* UniversalExposition.swift */; };
 		6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A4278C174D00064B4C /* koreanEntryMock.json */; };
 		6EA789A7278C176E00064B4C /* universalExpositionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A6278C176E00064B4C /* universalExpositionMock.json */; };
+		6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */; };
+		C23E4AB8278D1222004B7270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB7278D1222004B7270 /* Constant.swift */; };
+		C23E4ABA278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */; };
+		C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */; };
+		C23E4AC0278D4B8A004B7270 /* JSONFileDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */; };
+		C23E4AC2278D4BB1004B7270 /* ExpositionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */; };
+		C23E4AC4278D5191004B7270 /* ExpositionRepositoryInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */; };
+		C23E4AC7278D5E78004B7270 /* KoreanEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */; };
+		C23E4AC8278D5E78004B7270 /* KoreanEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */; };
 		C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B42589F401005FB0FD /* AppDelegate.swift */; };
 		C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B62589F401005FB0FD /* SceneDelegate.swift */; };
-		C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ViewController.swift */; };
+		C79FF4B92589F401005FB0FD /* ExpositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */; };
 		C79FF4BC2589F401005FB0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79FF4BA2589F401005FB0FD /* Main.storyboard */; };
 		C79FF4BE2589F404005FB0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79FF4BD2589F404005FB0FD /* Assets.xcassets */; };
 		C79FF4C12589F404005FB0FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79FF4BF2589F404005FB0FD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListTableViewDataSoruce.swift; sourceTree = "<group>"; };
+		6E887937278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListTableViewDelegate.swift; sourceTree = "<group>"; };
 		6EA7899D278C167900064B4C /* KoreanEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntry.swift; sourceTree = "<group>"; };
 		6EA7899F278C168500064B4C /* UniversalExposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalExposition.swift; sourceTree = "<group>"; };
 		6EA789A4278C174D00064B4C /* koreanEntryMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = koreanEntryMock.json; sourceTree = "<group>"; };
 		6EA789A6278C176E00064B4C /* universalExpositionMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = universalExpositionMock.json; sourceTree = "<group>"; };
+		6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryDetailViewController.swift; sourceTree = "<group>"; };
+		C23E4AB7278D1222004B7270 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepositoryDummyImpl.swift; sourceTree = "<group>"; };
+		C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListViewController.swift; sourceTree = "<group>"; };
+		C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDecodable.swift; sourceTree = "<group>"; };
+		C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepository.swift; sourceTree = "<group>"; };
+		C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionRepositoryInjection.swift; sourceTree = "<group>"; };
+		C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryTableViewCell.swift; sourceTree = "<group>"; };
+		C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KoreanEntryTableViewCell.xib; sourceTree = "<group>"; };
 		C79FF4B12589F401005FB0FD /* Expo1900.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expo1900.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79FF4B42589F401005FB0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79FF4B62589F401005FB0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C79FF4B82589F401005FB0FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpositionViewController.swift; sourceTree = "<group>"; };
 		C79FF4BB2589F401005FB0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C79FF4BD2589F404005FB0FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79FF4C02589F404005FB0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,22 +72,32 @@
 			children = (
 				6EA7899D278C167900064B4C /* KoreanEntry.swift */,
 				6EA7899F278C168500064B4C /* UniversalExposition.swift */,
+				C23E4ABF278D4B8A004B7270 /* JSONFileDecodable.swift */,
+				C23E4AC1278D4BB1004B7270 /* ExpositionRepository.swift */,
+				C23E4AB9278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift */,
+				C23E4AC3278D5191004B7270 /* ExpositionRepositoryInjection.swift */,
+				6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		6EA789A1278C169700064B4C /* ViewControllers */ = {
+		6EA789A1278C169700064B4C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C79FF4B82589F401005FB0FD /* ViewController.swift */,
+				C79FF4B82589F401005FB0FD /* ExpositionViewController.swift */,
+				C23E4ABD278D168B004B7270 /* KoreanEntryListViewController.swift */,
+				6EF3DFDF278EA57400A931E4 /* KoreanEntryDetailViewController.swift */,
+				6E887937278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6EA789A2278C16A100064B4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C79FF4BA2589F401005FB0FD /* Main.storyboard */,
+				C23E4AC5278D5E78004B7270 /* KoreanEntryTableViewCell.swift */,
+				C23E4AC6278D5E78004B7270 /* KoreanEntryTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,6 +110,14 @@
 				6EA789A6278C176E00064B4C /* universalExpositionMock.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C23E4AB6278D1212004B7270 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C23E4AB7278D1222004B7270 /* Constant.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C79FF4A82589F401005FB0FD = {
@@ -99,9 +139,10 @@
 		C79FF4B32589F401005FB0FD /* Expo1900 */ = {
 			isa = PBXGroup;
 			children = (
+				C23E4AB6278D1212004B7270 /* Common */,
 				6EA789A3278C16E900064B4C /* Resources */,
 				6EA789A2278C16A100064B4C /* Views */,
-				6EA789A1278C169700064B4C /* ViewControllers */,
+				6EA789A1278C169700064B4C /* Controllers */,
 				6EA7899C278C160000064B4C /* Models */,
 				C79FF4B42589F401005FB0FD /* AppDelegate.swift */,
 				C79FF4B62589F401005FB0FD /* SceneDelegate.swift */,
@@ -172,6 +213,7 @@
 				6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */,
 				C79FF4C12589F404005FB0FD /* LaunchScreen.storyboard in Resources */,
 				C79FF4BE2589F404005FB0FD /* Assets.xcassets in Resources */,
+				C23E4AC8278D5E78004B7270 /* KoreanEntryTableViewCell.xib in Resources */,
 				C79FF4BC2589F401005FB0FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,11 +225,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79FF4B92589F401005FB0FD /* ViewController.swift in Sources */,
+				6E887938278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift in Sources */,
+				C23E4ABA278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift in Sources */,
+				C79FF4B92589F401005FB0FD /* ExpositionViewController.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
+				C23E4AC4278D5191004B7270 /* ExpositionRepositoryInjection.swift in Sources */,
 				6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */,
+				C23E4AC2278D4BB1004B7270 /* ExpositionRepository.swift in Sources */,
 				6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */,
+				6EF3DFE0278EA57400A931E4 /* KoreanEntryDetailViewController.swift in Sources */,
+				C23E4AC0278D4B8A004B7270 /* JSONFileDecodable.swift in Sources */,
 				C79FF4B72589F401005FB0FD /* SceneDelegate.swift in Sources */,
+				C23E4ABE278D168B004B7270 /* KoreanEntryListViewController.swift in Sources */,
+				6E887936278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift in Sources */,
+				C23E4AC7278D5E78004B7270 /* KoreanEntryTableViewCell.swift in Sources */,
+				C23E4AB8278D1222004B7270 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
