@@ -49,13 +49,28 @@ class ExpositionViewController: UIViewController {
     }
     
     private func configureUI() {
-        self.titleLabel.text = self.universalExposition?.title
-        self.visitorsLabel.text = "\(self.universalExposition?.visitors ?? 0) 명"
-        self.locationLabel.text = self.universalExposition?.location
-        self.durationLabel.text = self.universalExposition?.duration
-        self.descriptionLabel.text = self.universalExposition?.description
+        guard let universalExposition = self.universalExposition else {
+            return
+        }
+
+        self.titleLabel.text = universalExposition.title
+        self.visitorsLabel.text = "\(universalExposition.visitors.numberToDecimalString()) 명"
+        self.locationLabel.text = universalExposition.location
+        self.durationLabel.text = universalExposition.duration
+        self.descriptionLabel.text = universalExposition.description
         
-        showListButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        guard let titleLabel = self.showListButton.titleLabel else {
+            return
+        }
+        
+        titleLabel.adjustsFontForContentSizeCategory = true
+        titleLabel.numberOfLines = 0
+        titleLabel.topAnchor.constraint(
+            equalTo: self.showListButton.topAnchor
+        ).isActive = true
+        titleLabel.bottomAnchor.constraint(
+            equalTo: self.showListButton.bottomAnchor
+        ).isActive = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
