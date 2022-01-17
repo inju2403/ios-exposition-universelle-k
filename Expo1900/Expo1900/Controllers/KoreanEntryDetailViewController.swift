@@ -104,7 +104,6 @@ class KoreanEntryDetailViewController: UIViewController {
     private func configurePortraitLayout() {
         self.imageViewConstraints.forEach { $0?.isActive = false }
         self.koreanEntryImageView.removeFromSuperview()
-        self.landscapeImageContainerView.setNeedsLayout()
         self.koreanEntryStackView.insertArrangedSubview(self.koreanEntryImageView, at: 0)
         self.imageViewHeightConstraint.isActive = true
         self.landsacpeContainerWidthConstraint.priority = .defaultHigh
