@@ -14,6 +14,7 @@ class ExpositionViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var showListButton: UIButton!
     
     private var api: ExpositionRepository?
     private var universalExposition: UniversalExposition? {
@@ -53,6 +54,8 @@ class ExpositionViewController: UIViewController {
         self.locationLabel.text = self.universalExposition?.location
         self.durationLabel.text = self.universalExposition?.duration
         self.descriptionLabel.text = self.universalExposition?.description
+        
+        showListButton.titleLabel?.adjustsFontForContentSizeCategory = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
