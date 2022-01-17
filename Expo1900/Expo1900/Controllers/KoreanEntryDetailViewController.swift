@@ -21,6 +21,7 @@ class KoreanEntryDetailViewController: UIViewController {
             return
         }
         
+        self.navigationItem.title = koreanEntry.name
         koreanEntryImageView.image = UIImage(named: koreanEntry.imageName)
         descriptionLabel.text = koreanEntry.description
     }
