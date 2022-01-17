@@ -54,6 +54,15 @@ class KoreanEntryDetailViewController: UIViewController {
         self.configureUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let bounds: CGRect = UIScreen.main.bounds
+        if bounds.width > bounds.height {
+            self.configureLandscapeLayout()
+        }
+    }
+    
     private func setUpNotificationObserver() {
         NotificationCenter.default.addObserver(
             self,
