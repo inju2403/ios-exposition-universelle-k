@@ -13,4 +13,5 @@ struct Constant {
     static let showDetailKoreanEntryNotification = "showDetailKoreanEntry"
     static let KoreanEntryDetailViewControllerIdentifier = "Detail"
     static let selectedIndexPathRow = "selectedIndexPathRow"
+    static let screenRotatingNotification = "UIDeviceOrientationDidChangeNotification"
 }
