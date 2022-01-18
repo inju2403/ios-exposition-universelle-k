@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E887936278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */; };
 		6E887938278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E887937278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift */; };
+		6E887988279568DB001DE591 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E887987279568DB001DE591 /* Int+Extension.swift */; };
 		6EA7899E278C167900064B4C /* KoreanEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899D278C167900064B4C /* KoreanEntry.swift */; };
 		6EA789A0278C168500064B4C /* UniversalExposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7899F278C168500064B4C /* UniversalExposition.swift */; };
 		6EA789A5278C174D00064B4C /* koreanEntryMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EA789A4278C174D00064B4C /* koreanEntryMock.json */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		6E887935278EB7A9001DE591 /* KoreanEntryListTableViewDataSoruce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListTableViewDataSoruce.swift; sourceTree = "<group>"; };
 		6E887937278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntryListTableViewDelegate.swift; sourceTree = "<group>"; };
+		6E887987279568DB001DE591 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		6EA7899D278C167900064B4C /* KoreanEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanEntry.swift; sourceTree = "<group>"; };
 		6EA7899F278C168500064B4C /* UniversalExposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalExposition.swift; sourceTree = "<group>"; };
 		6EA789A4278C174D00064B4C /* koreanEntryMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = koreanEntryMock.json; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				C23E4AB7278D1222004B7270 /* Constant.swift */,
+				6E887987279568DB001DE591 /* Int+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E887938278EB7D5001DE591 /* KoreanEntryListTableViewDelegate.swift in Sources */,
+				6E887988279568DB001DE591 /* Int+Extension.swift in Sources */,
 				C23E4ABA278D123F004B7270 /* ExpositionRepositoryDummyImpl.swift in Sources */,
 				C79FF4B92589F401005FB0FD /* ExpositionViewController.swift in Sources */,
 				C79FF4B52589F401005FB0FD /* AppDelegate.swift in Sources */,
